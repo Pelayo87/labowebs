@@ -1,6 +1,8 @@
 # Ejercicio de Git - proyecto labowebs
 
-Pelayo Rodríguez Álvarez
+Pelayo Rodríguez Álvarez 
+
+URL Repositorio GITHUB: https://github.com/Pelayo87/labowebs.git
 
 [TOC]
 
@@ -182,6 +184,43 @@ Pelayo Rodríguez Álvarez
 
    ![image-20241114101708278](./EJERCICIO GIT- labowebs.assets/image-20241114101708278.png)
 
-2.  **Vuelve a la rama main . En el fichero script.js en las mismas líneas que en la cuestión anterior, añade el código siguiente. Confirma el cambio y haz un commit.**
+2. **Vuelve a la rama main . En el fichero script.js en las mismas líneas que en la cuestión anterior, añade el código siguiente. Confirma el cambio y haz un commit.**
 
-   
+   ```bash
+   $ git checkout main
+   $ code js/script.js
+   $ git add script.js
+   $ git commit -m "Añadido validación de mensaje vacío en script.js en la rama main"
+   ```
+
+   ![image-20241115084249940](C:\Users\alumno\AppData\Roaming\Typora\typora-user-images\image-20241115084249940.png)
+
+![image-20241115084336558](C:\Users\alumno\AppData\Roaming\Typora\typora-user-images\image-20241115084336558.png)
+
+3. **Fusiona la rama hotfix-js en main . Debe producirse un conflicto. Resuélvelo. Cuando termines la resolución del conflicto sube los cambios al remoto - Deja los repositorios sincronizados.**
+
+   ```bash
+   $ git merge hotfix-js
+   //RESUELVO EL CONFLICTO
+   $ code js/script.js
+   $ git add script.js
+   $ git commit -m "Resuelto conflicto entre hotfix-js y main en script.js"
+   $ git push origin main
+   ```
+
+   ![image-20241115084936725](C:\Users\alumno\AppData\Roaming\Typora\typora-user-images\image-20241115084936725.png)
+
+## <u>Subida de documentación</u>
+
+**En la carpeta del proyecto labowebs añade una carpeta docs . Copia en esa carpeta el fichero markdown y la carpeta con las imágenes. Incluye también el pdf . Añade todo al repositorio. Súbelo al remoto.**
+
+```bash
+$ mkdir docs
+$ git add docs/
+$ git commit -m "Añadida carpeta docs con archivos Markdown, imágenes y PDF"
+$ git push origin main
+```
+
+![image-20241115085504724](C:\Users\alumno\AppData\Roaming\Typora\typora-user-images\image-20241115085504724.png)
+
+![image-20241115085522276](C:\Users\alumno\AppData\Roaming\Typora\typora-user-images\image-20241115085522276.png)
